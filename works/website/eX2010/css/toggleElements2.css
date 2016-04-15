@@ -1,0 +1,76 @@
+/**
+ * ----------------------------------------------------------------------------
+ * toggleElements.css - Stylesheet for jQuery-Plugin toggleElements
+ * ----------------------------------------------------------------------------
+ */
+
+ /* Screen ------------------------------------------------------------------- */
+
+@media projection, screen {
+
+	/* Toggler2 */
+
+	.toggler2 {
+		
+		/* mergin: 0px; */
+		padding: 10px 0px 10px 0px;   
+		cursor:pointer;
+		text-decoration: none;
+		
+		font-size: 13px;
+		font-weight:normal;
+		line-height:14px;
+		display: block;
+		text-align: left;
+		
+		letter-spacing: 0.2em;
+
+		background: #fff;
+	
+		/* color: #000; */
+		/* border:1px #999 solid; */
+		
+
+	}
+	.toggler2-closed {
+		color: #aaa;
+	}
+
+	.toggler2-closed:hover {
+		color: #000;
+	}
+
+	.toggler2-opened {
+		color: #000;
+	}
+	.toggler2-opened:hover {
+		color: #aaa;
+	}
+
+
+	/* Container */
+	.toggler2-c {
+
+		/* mergin: 10px 0px; */
+		
+		color: #000;
+		font-size: 9px;
+		letter-spacing: 0.2em;
+		background:#fff;
+		/* width:470px; */
+	   
+		padding: 0px;		
+	}
+	
+	.toggler2-c-closed {
+		/* ここにpadding-top, bottomを設定すると表示がカクつく */
+		padding: 0px 0px;
+	}
+
+	.toggler2-c-opened {
+		
+		/* ここにpadding-top, bottomを設定すると表示がカクつく */
+		padding: 0px 0px;
+	}
+}
+
