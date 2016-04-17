@@ -5,6 +5,7 @@
 		<title><?php echo $title; ?></title>
 	</head>
 	<body>
+		<?php include_once("../php/googleAnalytics.php") ?>
 		<div id="container">
 			<?php include("../php/menu.php") ?>
 			<!-- Start contents -->		
