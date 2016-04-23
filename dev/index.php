@@ -253,6 +253,7 @@ $MAX_UPLOAD_SIZE = min(asBytes(ini_get('post_max_size')), asBytes(ini_get('uploa
 </head>
 
 <body>
+	<?php include_once("php/googleAnalytics.php") ?>
 	<div id="container">
 		<?php include_once("../php/menu.php") ?>
 	

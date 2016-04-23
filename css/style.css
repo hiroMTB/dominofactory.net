@@ -89,15 +89,12 @@ a:active  {color: #EC5210; text-decoration : none; }
 .normalcase{ text-transform: none; letter-spacing: 0.01em;}
 
 /*--------------------- util ---------------*/
-
 .right{	float: right; text-align: right; }
 .left{	float:left; text-align: left; }
 .clear{ clear: both; }
 .waku{ border: solid 1px #eee; }
 
-
 /*---------------------table---------------*/
-
 table.schedule{ font-size: 11px; }
 .schedule td{
 	padding-top: 10px;
@@ -111,13 +108,11 @@ table.schedule{ font-size: 11px; }
 	width:100px;
 }
 
-
 .blue_arrow{
 	height: 30px;
 	margin-top: 60px;
 	margin-bottom: 60px;
 }
-
 
 .blue_rect{
 	height: 35px;
@@ -174,8 +169,6 @@ table.schedule{ font-size: 11px; }
 			color: gray;
 		}
 		
-		
-
 #soundmanager-debug{
 	background-color: white;
 	color: black;

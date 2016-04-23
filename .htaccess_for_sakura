@@ -1,0 +1,38 @@
+#DirectoryIndex index.html index.php .ht
+DirectoryIndex index.html index.php
+ErrorDocument 404 /error/404-file-not-found.html
+AddType video/ogg .ogv
+AddType video/mp4 .mp4
+AddType video/webm .webm
+
+# 2013.12
+# php setting
+# copy /usr/local/php/5.4.22/bin/php-cgi-mysql5.5 to /home/hirothew/www/php.cgi
+AddHandler myphp-script .php .html
+Action myphp-script /php/php.cgi
+
+# redirect
+# From works/Overbug/Overbug.html
+# To   works/Overbug.html
+RewriteEngine on
+RewriteRule ^works/(.*)/(.*)\.html$ /works/$2\.html [R=301,L]
+
+# use no www address
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.dominofactory\.net
+RewriteRule (.*) http://dominofactory.net/$1 [R=301,L]
+
+# Cache img valid in 1 weeks
+<Files ~ ".(gif|jpe?g|png|ico)$">
+   Header set Cache-Control "max-age=561600, public"
+</Files>
+
+# Cache css, js valid in 2 weeks
+<Files ~ ".(css|js)$">
+   Header set Cache-Control "max-age=1123200, public"
+</Files>
+
+# cache mp4 valid in 1 weeks
+<Files ~ ".(mp4)$">
+   Header set Cache-Control "max-age=561600, public"
+</Files>
